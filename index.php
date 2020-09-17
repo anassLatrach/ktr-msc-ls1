@@ -14,11 +14,13 @@ require('controllers/home.php');
 require('controllers/users.php');
 require('controllers/errors.php'); 
 require('controllers/profil.php'); 
+require('controllers/libraries.php'); 
 
 require('models/home.php');
 require('models/user.php');
 require('models/error.php'); 
 require('models/profil.php'); 
+require('models/library.php'); 
 
 $bootstrap = new Bootstrap($_GET);
 $controller = $bootstrap->createController();

@@ -23,10 +23,8 @@
           <ul class="nav navbar-nav">
             <li><a href="<?php echo ROOT_URL; ?>">Home</a></li>
             <?php if(isset($_SESSION['is_logged_in'])) : ?>
-            
-             
-            <li><a href="<?php echo ROOT_URL; ?>profil/">Profil</a></li>
-              <li><a href="<?php echo ROOT_URL; ?>responses/">Library</a></li>
+              <li><a href="<?php echo ROOT_URL; ?>profil/">Profil</a></li>
+              <li><a href="<?php echo ROOT_URL; ?>libraries/">Library</a></li>
             <?php endif; ?> 
           </ul>
 
