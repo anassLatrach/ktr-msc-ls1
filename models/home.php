@@ -1,6 +1,8 @@
 <?php
 class HomeModel extends Model{
 	public function Index(){
-		return;
+		$this->query("select * from users");
+		 $rows = $this->resultSet();
+		return $rows;
 	}
 }
