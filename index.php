@@ -13,10 +13,12 @@ require('classes/Model.php');
 require('controllers/home.php'); 
 require('controllers/users.php');
 require('controllers/errors.php'); 
+require('controllers/profil.php'); 
 
 require('models/home.php');
 require('models/user.php');
 require('models/error.php'); 
+require('models/profil.php'); 
 
 $bootstrap = new Bootstrap($_GET);
 $controller = $bootstrap->createController();

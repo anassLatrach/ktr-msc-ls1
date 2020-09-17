@@ -47,10 +47,10 @@ class UserModel extends Model{
 				$_SESSION['is_logged_in'] = true;
 				$_SESSION['user_data'] = array(
 					"id"	=> $row['id'],
-					"name"	=> $row['nameUser'],
+					"name"	=> $row['name'],
 					"email"	=> $row['email'],
 					"tel"	=> $row['tel'],
-					"companyUser"	=> $row['companyUser'],
+					"company"=> $row['company'],
 				);
 				header('Location: '.ROOT_URL.'home');
 			} else {

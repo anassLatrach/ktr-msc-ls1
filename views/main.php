@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Foyer</title>
+	<title>Business card</title>
 	<link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo ROOT_PATH; ?>assets/css/style.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
@@ -24,20 +24,15 @@
             <li><a href="<?php echo ROOT_URL; ?>">Home</a></li>
             <?php if(isset($_SESSION['is_logged_in'])) : ?>
             
-              <?php if($_SESSION['user_data']['idType'] == 1) : ?>
-            <li><a href="<?php echo ROOT_URL; ?>reports/">Report</a></li>
-            <?php else : ?>
-              <li><a href="<?php echo ROOT_URL; ?>responses/">messages</a></li>
-              <li><a href="<?php echo ROOT_URL; ?>responses/response">response</a></li>
-              <li><a href="<?php echo ROOT_URL; ?>admins/">admin</a></li>
+             
+            <li><a href="<?php echo ROOT_URL; ?>profil/">Profil</a></li>
+              <li><a href="<?php echo ROOT_URL; ?>responses/">Library</a></li>
             <?php endif; ?> 
-            <?php endif; ?>
-
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
             <?php if(isset($_SESSION['is_logged_in'])) : ?>
-            <li><a href="<?php echo ROOT_URL; ?>">Bonjour <?php echo $_SESSION['user_data']['nom']; ?></a></li>
+            <li><a href="<?php echo ROOT_URL; ?>">Bonjour <?php echo $_SESSION['user_data']['name']; ?></a></li>
             <li><a href="<?php echo ROOT_URL; ?>users/logout">Logout</a></li>
           <?php else : ?>
             <li><a href="<?php echo ROOT_URL; ?>users/login">Login</a></li>
