@@ -13,7 +13,7 @@ class UserModel extends Model{
 			}
 
 			// Insert into MySQL
-			$this->query('INSERT INTO users (name, email, tel, pwd, company) VALUES(:nameUser, :companyUser, :email, :password, 1)');
+			$this->query('INSERT INTO users (name, email, tel, pwd, company) VALUES(:nameUser, :email, :tel, :password, :companyUser)');
 			$this->bind(':nameUser', $post['nameUser']);
 			$this->bind(':companyUser', $post['companyUser']);
 			$this->bind(':email', $post['email']);
